@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file Uploads</title>
+</head>
+
+<body>
+    <div class="forSingle">For Single
+        <form action="/single" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" />
+            <button type="submit">Submit</button>
+        </form>
+    </div><br>
+    <div class="forMultiple">For Multiple
+        <form action="/multiple" method="post" enctype="multipart/form-data">
+            <input type="file" name="images" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
